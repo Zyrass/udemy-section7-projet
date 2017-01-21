@@ -28,6 +28,11 @@ body {
 
 .thumbnail img {
     background-color: #FFDA8C;
+    filter: grayscale(100%);
+}
+.thumbnail:hover img {
+    transition: all .5s ease-in-out;
+    filter: grayscale(0%);
 }
 
 .price {
@@ -92,7 +97,8 @@ p {
     text-shadow: 2px 2px #333;
 }
 
-.nav>li>a, a#askLogin {
+.nav>li>a, 
+a#askLogin {
     color: #eee;
     font-size: 15px;
     text-shadow: 2px 2px #333;
@@ -116,6 +122,45 @@ p {
     background-color: #c13c0d;
 }
 
-/* ROUGE e7480f
- * JAUNE ffd301
- * VERT 5cb85c
+footer {
+    height: 100px;
+    line-height: 90px;
+    margin-top: 40px;
+    background-color: #e7480f;
+    opacity: .5;
+    border-radius: 3px 3px 0 0;
+    position: relative;
+}
+footer:hover {
+    transition: all .5s ease-in-out;
+    opacity: 1;
+}
+
+.glyphLogin {
+    position: absolute;
+    font-size: 6em;
+    top: 5px;
+    opacity: .1s;
+    left: 50px;
+    color: #FFDA8C;
+    text-shadow: 2px 2px 2px #333;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+a#askLogin {
+    text-decoration: none;
+}
+a#askLogin:hover {
+    transition: all .5s ease-in-out;
+    font-size: 18px;
+}
+
+/* ADMINISTRATION */
+.admin {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 10px;
+}

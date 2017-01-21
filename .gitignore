@@ -1,1 +1,2 @@
-# Aucun fichier à ignorer pour le moment.
+# J'ignore la connexion à la bdd.
+admin/database.php;
