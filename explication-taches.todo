@@ -1,0 +1,37 @@
+Explication des commandes possibles :
+-----------------------------------------------------------------------------------------------------------------------
+    * Pour pouvoir utiliser ce merveilleux outil, il faut enregistrer un nouveau fichier au format :
+        * 2 Choix possibles :
+            - nom_de_mon_fichier.todo (Des icônes existes avec ce type d'extension)
+            - nom_de_mon_fichier.tasks
+-----------------------------------------------------------------------------------------------------------------------
+Explication des commandes possibles :
+-----------------------------------------------------------------------------------------------------------------------
+    1° - Pour ajouter une tâche :
+        * Pour créer une nouvelle tache, il faut appuyer sur les touches : (CTRL + ENTRER)
+        * Exemple : 
+            (Ajout d'un texte et validation de cette ligne par CTRL + ENTRER)
+            ☐ - Ceci est une ligne d'exemple avec la combinaison de CTRL + ENTRER.
+            ☐ - Autre ligne avec la même combinaison.
+-----------------------------------------------------------------------------------------------------------------------
+    2° - Pour valider une tâche terminer :
+        * Pour valider une tâche, il faut utiliser la combinaison suivante : (ALT + D)
+        * Exemple :
+            * Reprenons l'exemple plus haut avec la validation de chaque ligne via la combinaison ALT + D.
+            ✔ - Ceci est une ligne d'exemple avec la combinaison de CTRL + ENTRER. @done (22/01/2017 à 16:26:03)
+            ✔ - Autre ligne avec la même combinaison. @done (22/01/2017 à 16:29:57)
+-----------------------------------------------------------------------------------------------------------------------
+    3° - Pour annuler une tâche :
+        * L'annulation d'une tâche se fait avec la combinaison des touches : (ALT + C)
+        * Exemple :
+            * Reprenons le 1er exemple en lui appliquant une annulation sur ces deux lignes avec ALT + C.
+            ✘ - Ceci est une ligne d'exemple avec la combinaison de CTRL + ENTRER. @cancelled (22/01/2017 à 16:29:28)
+            ✘ - Autre ligne avec la même combinaison. @cancelled (22/01/2017 à 16:29:35)
+-----------------------------------------------------------------------------------------------------------------------
+    4° - Ajouter de la couleur dans nos tâches :
+         * L'ajout des tags de couleur est permise uniquement dans une tâche quelconque.
+         * Les quatre tags valide sont :
+            ☐ @today    -- Cette couleur est utilisée pour spécifier que c'est à faire pour aujourd'hui.
+            ☐ @low        -- Cette couleur permet de spécifier que c'est pas une tache importante.
+            ☐ @high      -- Cette couleur spécifie que notre tâche à pas mal d'importance.
+            ☐ @critical -- Cette couleur permet de dire qu'il faut impérativement corriger cette tâche.

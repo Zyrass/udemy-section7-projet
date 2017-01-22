@@ -15,6 +15,7 @@
         <link rel="stylesheet" type="text/css" href="../vendor/bootstrap/css/bootstrap.min.css">
         <!-- CSS Perso -->
         <link rel="stylesheet" type="text/css" href="../vendor/css/myStyle.css">
+        <link rel="stylesheet" type="text/css" href="../vendor/css/myStyleAdmin.css">
         <!-- Animate.css -->
         <link rel="stylesheet" type="text/css" href="../vendor/css/animate.css">
         <!-- Google Font -->
@@ -53,10 +54,10 @@
                        while($item = $statement->fetch()){
 
                            echo '<tr>';
-                               echo '<td>' . $item['name'] . '</td>';
-                               echo '<td>' . $item['description'] . '</td>';
-                               echo '<td>' . $item['price'] . '</td>';
-                               echo '<td>' . $item['category'] . '</td>';
+                               echo '<td>' . utf8_encode ($item['name']) . '</td>';
+                               echo '<td>' . utf8_encode ($item['description']) . '</td>';
+                               echo '<td>' . number_format ((float)$item['price'], 2, '.', '') . '€</td>';
+                               echo '<td>' . utf8_encode ($item['category']) . '</td>';
                                echo '<td width=300>';
                                echo '<a href="view.php?id=' . $item['id'] . '" class="btn btn-info"><span class="glyphicon glyphicon-eye-open"></span> Voir</a>';
                                echo ' ';
@@ -66,6 +67,8 @@
                                echo '</td>';
                            echo '</tr>';  
                        }
+
+                       Database::disconnect();
                     ?>
                    </tbody>
                </table>
@@ -77,7 +80,7 @@
         <!-- Script bootstrap 3.3.7 -->
         <script type="text/javascript" src="../vendor/bootstrap/js/bootstrap.min.js"></script>
         <!-- Script wow -->
-        <script src="vendor/js/wow.min.js"></script>
+        <script src="../vendor/js/wow.min.js"></script>
         <script>
             new WOW().init();
         </script>

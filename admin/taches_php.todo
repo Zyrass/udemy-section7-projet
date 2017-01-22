@@ -1,0 +1,94 @@
+Section - Administration
+---------------------------------------------------------------------------------------------------------------
+Tâches à faire :
+    1°- base de donnée MySQL :
+        ✔ - Création de la base de donnée burger_code. @done (22/01/2017 à 17:48:30)
+        ✔ - Conception de la table items. @done (22/01/2017 à 17:48:31)
+            1a - La table items :
+                ✔ - Création des champs pour la table items. @done (22/01/2017 à 17:48:33)
+                ✔ - Désignation des valeurs que l'on va stocker dans nos champs. @done (22/01/2017 à 17:48:36)
+                ✔ - Création d'un index sur le champ category @done (22/01/2017 à 17:48:41)
+                ✔ - Remplissage des champs. @done (22/01/2017 à 17:48:40)
+        ✔ - Conception de la table categories. @done (22/01/2017 à 17:48:45)
+            1b - La table categories :
+                ✔ - Création des champs pour la table categories. @done (22/01/2017 à 17:48:47)
+                ✔ - Désignation des valeurs que l'on va stocker dans nos champs. @done (22/01/2017 à 17:48:48)
+                ✔ - Remplissage des champs. @done (22/01/2017 à 17:48:53)
+        ✔ - Création d'une relation entre la clé principal et la clé étrangère. @done (22/01/2017 à 17:48:49)
+---------------------------------------------------------------------------------------------------------------
+    2°- database.php :
+        ✔ - Confectionner la class Database @done (22/01/2017 à 17:48:56)
+        ✔ - Spécifier les attributs à notre class Database @done (22/01/2017 à 17:48:58)
+        ✔ - Conception d'une méthode statique pour la connexion à la base de donnée. @done (22/01/2017 à 17:48:59)
+            2a method connect() :
+                ✔ - Attraper des erreurs avec les blocs try / catch. @done (22/01/2017 à 17:49:00)
+                ✔ - Attraper des exceptions avec PDO. @done (22/01/2017 à 17:49:01)
+        ✔ - Conception d'une méthode statique pour la déconnexion à la base de donnée. @done (22/01/2017 à 17:49:02)
+---------------------------------------------------------------------------------------------------------------
+    3°- index.php :
+        ✔ - Conception de la page statique en HTML. @done (22/01/2017 à 17:49:04)
+        ✔ - Conception de la page statique en CSS. @done (22/01/2017 à 17:49:05)
+        ✔ - Définition du tableau avec les classes de bootstrap. @done (22/01/2017 à 17:49:05)
+            3a Code php :
+                ✔ - Importer le fichier database.php. @done (22/01/2017 à 17:49:06)
+                ✔ - Se connecter à la base de donnée. @done (22/01/2017 à 17:49:07)
+                ✔ - Déclaration de notre requête SQL. @done (22/01/2017 à 17:49:07)
+                ✔ - Conception d'une boucle avec fetch(). @done (22/01/2017 à 17:49:08)
+                ✔ - Définition de plusieurs echo comprenant les balises et le code nécessaire pour recevoir les fichiers @done (22/01/2017 à 17:49:09)
+                ✔ - Se déconnecter de la base de donnée. @done (22/01/2017 à 17:49:09)
+---------------------------------------------------------------------------------------------------------------
+    4°- view.php :
+        ✔ - Conception de la page statique en HTML. @done (22/01/2017 à 17:49:48)
+        ✔ - Conception de la page statique en CSS. @done (22/01/2017 à 17:49:49)
+            4a Code php :
+                ✔ - Importer le fichier database.php. @done (22/01/2017 à 17:49:50)
+                ✔ - Vérification si il y a bien un ID dans la super globale $_GET. @done (22/01/2017 à 17:49:50)
+                ✔ - Conception d'une fonction pour se protéger d'un éventuel hacker. @done (22/01/2017 à 17:49:51)
+                ✔ - Se connecter à la base de donnée. @done (22/01/2017 à 17:49:52)
+                ✔ - Déclaration de notre requête SQL. @done (22/01/2017 à 17:49:52)
+                ✔ - Conception d'une boucle avec fetch(). @done (22/01/2017 à 17:49:53)
+                ✔ - Se déconnecter de la base de donnée. @done (22/01/2017 à 17:49:54)
+        ✔ - Ajout du code PHP permettant de rechercher dynamiquement les informations demandés pour la colonne de gauche. @done (22/01/2017 à 17:49:54)
+        ✔ - Ajout du code PHP permettant de rechercher dynamiquement les informations demandés pour la colonne de droite. @done (22/01/2017 à 17:49:55)
+---------------------------------------------------------------------------------------------------------------
+    5° - insert.php :
+        ☐ - Conception de la page statique en HTML.
+        ☐ - Conception de la page statique en CSS.
+            5a Code php :
+                ☐ - Importer le fichier database.php.
+                ☐ - Vérification si il y a bien un ID dans la super globale $_GET.
+                ☐ - Conception d'une fonction pour se protéger d'un éventuel hacker.
+                ☐ - Se connecter à la base de donnée.
+                ☐ - Déclaration de notre requête SQL.
+                ☐ - Conception d'une boucle avec fetch().
+                ☐ - Se déconnecter de la base de donnée.
+        ☐ - Ajout du code PHP permettant de rechercher dynamiquement les informations demandés pour la colonne de gauche.
+        ☐ - Ajout du code PHP permettant de rechercher dynamiquement les informations demandés pour la colonne de droite.
+---------------------------------------------------------------------------------------------------------------
+    6° - update.php :
+        ☐ - Conception de la page statique en HTML.
+        ☐ - Conception de la page statique en CSS.
+            4a Code php :
+                ☐ - Importer le fichier database.php.
+                ☐ - Vérification si il y a bien un ID dans la super globale $_GET.
+                ☐ - Conception d'une fonction pour se protéger d'un éventuel hacker.
+                ☐ - Se connecter à la base de donnée.
+                ☐ - Déclaration de notre requête SQL.
+                ☐ - Conception d'une boucle avec fetch().
+                ☐ - Se déconnecter de la base de donnée.
+        ☐ - Ajout du code PHP permettant de rechercher dynamiquement les informations demandés pour la colonne de gauche.
+        ☐ - Ajout du code PHP permettant de rechercher dynamiquement les informations demandés pour la colonne de droite.
+---------------------------------------------------------------------------------------------------------------
+    7° - delete.php :
+        ☐ - Conception de la page statique en HTML.
+        ☐ - Conception de la page statique en CSS.
+            4a Code php :
+                ☐ - Importer le fichier database.php.
+                ☐ - Vérification si il y a bien un ID dans la super globale $_GET.
+                ☐ - Conception d'une fonction pour se protéger d'un éventuel hacker.
+                ☐ - Se connecter à la base de donnée.
+                ☐ - Déclaration de notre requête SQL.
+                ☐ - Conception d'une boucle avec fetch().
+                ☐ - Se déconnecter de la base de donnée.
+        ☐ - Ajout du code PHP permettant de rechercher dynamiquement les informations demandés pour la colonne de gauche.
+        ☐ - Ajout du code PHP permettant de rechercher dynamiquement les informations demandés pour la colonne de droite.

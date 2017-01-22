@@ -1,2 +1,2 @@
 # J'ignore la connexion à la bdd.
-admin/database.php;
+/admin/database.php;
