@@ -27,7 +27,7 @@
     **/
     function checkInput($data) {
         $data = trim($data);
-        $data = stripcslashes($data);
+        $data = stripslashes($data);
         $data = htmlspecialchars($data);
         
         return $data;
@@ -43,7 +43,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Burger Family</title>
+        <title>Burger Family - Visualisation</title>
         <meta name="description" content="Site dynamique sur les burgers">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Font-Awesome CDN -->
@@ -169,7 +169,7 @@
                     <a href="index.php" class="btn btn-primary btn-block"><span class="glyphicon glyphicon-arrow-left"></span> Cliquez ici pour retourner sur l'index des produits</a> 
                </div>
                <div class="col-sm-6">
-                    <a href="update.php" class="btn btn-info btn-block"><span class="glyphicon glyphicon-pencil"></span> Accès rapide à la zone de modification</a>
+                    <a href="<?php echo 'update.php?id=' . $id; ?>" class="btn btn-info btn-block"><span class="glyphicon glyphicon-pencil"></span> Accès rapide à la zone de modification</a>
                </div>
            </div>
         

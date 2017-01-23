@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Burger Family</title>
+        <title>Burger Family - Administration</title>
         <meta name="description" content="Site dynamique sur les burgers">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Font-Awesome CDN -->
@@ -29,7 +29,10 @@
         <h1 class="text-logo"><span class="glyphicon glyphicon-cutlery wow bounceInLeft"></span> Burger Family <span class="glyphicon glyphicon-cutlery wow bounceInRight"></span></h1>
         <div class="container admin">
            <div class="row">
-               <h1><strong>Liste des items </strong><a href="insert.php" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-plus"></span> Ajouter</a></h1>
+               <h1><strong>Liste des items </strong>
+                    <a href="insert.php" class="btn btn-success"><span class="glyphicon glyphicon-plus"></span> Ajouter</a>
+                    <a href="../index.php" class="btn btn-primary"><span class="glyphicon glyphicon-arraw-left"></span> Retournez sur le site</a>
+                </h1>
            
                <table class="table table-striped table-bordered">
                    <thead>

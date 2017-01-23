@@ -29,17 +29,29 @@
         <div class="container site">
             <h1 class="text-logo"><span class="glyphicon glyphicon-cutlery wow bounceInLeft"></span> Burger Family <span class="glyphicon glyphicon-cutlery wow bounceInRight"></span></h1>
 
-            <nav>
-                <ul class="nav nav-pills wow bounceInDown">
-                    <li role="presentation" class="active"><a href="#1" data-toggle="tab">Menus</a></li>
-                    <li role="presentation"><a href="#2" data-toggle="tab">Burgers</a></li>
-                    <li role="presentation"><a href="#3" data-toggle="tab">Snacks</a></li>
-                    <li role="presentation"><a href="#4" data-toggle="tab">Salades</a></li>
-                    <li role="presentation"><a href="#5" data-toggle="tab">Boissons</a></li>
-                    <li role="presentation"><a href="#6" data-toggle="tab">Desserts</a></li>
-                    <li role="presentation"><a href="#7" data-toggle="tab">Sauces</a></li>
-                </ul>
-            </nav>
+            <?php 
+                require ('admin/database.php');
+
+                echo '<nav>';
+                    echo '<ul class="nav nav-pills wow bounceInDown">';
+
+                        $bdd = Database::connect();
+                        $declare = $bdd->query ( 'SELECT * FROM categories' );
+                        $categories = $declare->fetchAll();
+
+                        foreach ( $categories as $category  ) {
+                            if ( $category['id'] == 1 ) {
+                                echo  '<li role="presentation" class="active"><a href="#' . $category['id'] .'" data-toggle="tab">' . $category['name'] .'</a></li>';
+                            } else {
+                                echo  '<li role="presentation"><a href="#' . $category['id'] .'" data-toggle="tab">' . $category['name'] .'</a></li>';
+                            }
+                        }
+
+                    echo '</ul>';
+                echo '</nav>';
+
+            ?>
+
 
             <div class="tab-content">
                 <div class="tab-pane active" id="1">
