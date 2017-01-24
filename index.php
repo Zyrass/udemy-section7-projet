@@ -66,50 +66,33 @@
                     $declare->execute(array($category['id']));
 
                     while ( $item = $declare->fetch() ) {
-                        echo '<div class="col-sm-6 col-md-4    wow fadeIn">
-                                        <div class="thumbnail">
-                                            <img src="assets/images/' . $item['image'] . '" alt="...">
-                                            <div class="price wow tada">' . number_format( (float) $item['price'], 2, ".", " ") . ' €</div>
-                                            <div class="caption">
-                                                <h4>' . utf8_encode($item['name']) . '</h4>
+                        echo '<div class="col-sm-6 col-md-4 wow fadeIn">';
+                            echo '<div class="thumbnail">';
+                                echo '<img src="assets/images/' . $item['image'] . '" alt="...">';
+                                    echo '<div class="price wow tada">' . number_format( (float) $item['price'], 2, ".", " ") . ' €</div>';
+                                        echo '<div class="caption">';
+                                            echo '<h4>' . utf8_encode($item['name']) . '</h4>';
                                                 
-                                                <div class="row">
-                                                    <div class="col-xs-1">
-                                                        <span class="glyphicon glyphicon-info-sign wow tada"></span>
-                                                    </div>
-                                                    <div class="col-xs-11">
-                                                        <p class="text-center">' . utf8_encode($item['description']) . '</p>
-                                                    </div>
-                                                </div>                                    
+                                                echo '<div class="row">';
+                                                    echo '<div class="col-xs-1">';
+                                                        echo '<span class="glyphicon glyphicon-info-sign wow tada"></span>';
+                                                    echo '</div>';
+                                                    echo '<div class="col-xs-11">';
+                                                        echo '<p class="text-center">' . utf8_encode($item['description']) . '</p>';
+                                                    echo '</div>';
+                                                echo '</div>';
                                     
-                                                <a href="#" class="btn btn-order" role="button"><span class="glyphicon glyphicon-shopping-cart"></span> Commander</a>
-                                            </div>
-                                        </div>
-                                    </div> ';
+                                                echo '<a href="#" class="btn btn-order" role="button"><span class="glyphicon glyphicon-shopping-cart"></span> Commander</a>';
+                                        echo '</div>';
+                                    echo '</div>';
+                                echo '</div>';
                     }
-                    echo '</div>
-                            </div>';
+                        echo '</div>';
+                    echo '</div>';
                 }
                 Database::disconnect();
                 echo '</div>';
-
             ?>
-            </div>
-
-
-                <footer>
-                    <span class="glyphicon glyphicon-log-in glyphLogin"></span>
-                    <div class="row">
-                        <div class="col-xs-12 text-center">
-                            <ul>
-                                <li><a href="admin/index.php" id="askLogin">Administrer le site.</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </footer>
-            </div> <!-- Fin tab-content -->
-        </div> <!-- Fin container site -->
-
 
 
         <!-- JQuery -->

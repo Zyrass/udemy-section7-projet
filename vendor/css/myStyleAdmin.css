@@ -1,6 +1,6 @@
 /* ADMINISTRATION */
 body {
-    background-image: url('../../assets/images/test/3.jpg');
+    background-image: url('../../assets/images/1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -24,8 +24,4 @@ body {
 
 .help-inline {
     color: #600;
-}
-
-textarea {
-    margin-bottom: 20px;
 }

@@ -52,43 +52,43 @@ Tâches à faire :
         ✔ - Ajout du code PHP permettant de rechercher dynamiquement les informations demandés pour la colonne de droite. @done (22/01/2017 à 17:49:55)
 ---------------------------------------------------------------------------------------------------------------
     5° - insert.php :
-        ☐ - Conception de la page statique en HTML.
-        ☐ - Conception de la page statique en CSS.
+        ✔ - Conception de la page statique en HTML. @done (24/01/2017 à 03:15:09)
+        ✔ - Conception de la page statique en CSS. @done (24/01/2017 à 03:15:10)
             5a Code php :
-                ☐ - Importer le fichier database.php.
-                ☐ - Vérification si il y a bien un ID dans la super globale $_GET.
-                ☐ - Conception d'une fonction pour se protéger d'un éventuel hacker.
-                ☐ - Se connecter à la base de donnée.
-                ☐ - Déclaration de notre requête SQL.
-                ☐ - Conception d'une boucle avec fetch().
-                ☐ - Se déconnecter de la base de donnée.
-        ☐ - Ajout du code PHP permettant de rechercher dynamiquement les informations demandés pour la colonne de gauche.
-        ☐ - Ajout du code PHP permettant de rechercher dynamiquement les informations demandés pour la colonne de droite.
+                ✔ - Importer le fichier database.php. @done (24/01/2017 à 03:15:11)
+                ✔ - Vérification si il y a bien un ID dans la super globale $_GET. @done (24/01/2017 à 03:15:12)
+                ✔ - Conception d'une fonction pour se protéger d'un éventuel hacker. @done (24/01/2017 à 03:15:12)
+                ✔ - Se connecter à la base de donnée. @done (24/01/2017 à 03:14:59)
+                ✔ - Déclaration de notre requête SQL. @done (24/01/2017 à 03:15:00)
+                ✔ - Conception d'une boucle avec fetch(). @done (24/01/2017 à 03:15:00)
+                ✔ - Se déconnecter de la base de donnée. @done (24/01/2017 à 03:15:01)
+        ✔ - Ajout du code PHP permettant de rechercher dynamiquement les informations demandés pour la colonne de gauche. @done (24/01/2017 à 03:15:01)
+        ✔ - Ajout du code PHP permettant de rechercher dynamiquement les informations demandés pour la colonne de droite. @done (24/01/2017 à 03:15:02)
 ---------------------------------------------------------------------------------------------------------------
     6° - update.php :
-        ☐ - Conception de la page statique en HTML.
-        ☐ - Conception de la page statique en CSS.
+        ✔ - Conception de la page statique en HTML. @done (24/01/2017 à 03:15:03)
+        ✔ - Conception de la page statique en CSS. @done (24/01/2017 à 03:15:04)
             4a Code php :
-                ☐ - Importer le fichier database.php.
-                ☐ - Vérification si il y a bien un ID dans la super globale $_GET.
-                ☐ - Conception d'une fonction pour se protéger d'un éventuel hacker.
-                ☐ - Se connecter à la base de donnée.
-                ☐ - Déclaration de notre requête SQL.
-                ☐ - Conception d'une boucle avec fetch().
-                ☐ - Se déconnecter de la base de donnée.
-        ☐ - Ajout du code PHP permettant de rechercher dynamiquement les informations demandés pour la colonne de gauche.
-        ☐ - Ajout du code PHP permettant de rechercher dynamiquement les informations demandés pour la colonne de droite.
+                ✔ - Importer le fichier database.php. @done (24/01/2017 à 03:15:05)
+                ✔ - Vérification si il y a bien un ID dans la super globale $_GET. @done (24/01/2017 à 03:15:05)
+                ✔ - Conception d'une fonction pour se protéger d'un éventuel hacker. @done (24/01/2017 à 03:14:56)
+                ✔ - Se connecter à la base de donnée. @done (24/01/2017 à 03:14:54)
+                ✔ - Déclaration de notre requête SQL. @done (24/01/2017 à 03:14:54)
+                ✔ - Conception d'une boucle avec fetch(). @done (24/01/2017 à 03:14:54)
+                ✔ - Se déconnecter de la base de donnée. @done (24/01/2017 à 03:14:53)
+        ✔ - Ajout du code PHP permettant de rechercher dynamiquement les informations demandés pour la colonne de gauche. @done (24/01/2017 à 03:14:52)
+        ✔ - Ajout du code PHP permettant de rechercher dynamiquement les informations demandés pour la colonne de droite. @done (24/01/2017 à 03:14:52)
 ---------------------------------------------------------------------------------------------------------------
     7° - delete.php :
-        ☐ - Conception de la page statique en HTML.
-        ☐ - Conception de la page statique en CSS.
+        ✔ - Conception de la page statique en HTML. @done (24/01/2017 à 03:14:50)
+        ✔ - Conception de la page statique en CSS. @done (24/01/2017 à 03:14:50)
             4a Code php :
-                ☐ - Importer le fichier database.php.
-                ☐ - Vérification si il y a bien un ID dans la super globale $_GET.
-                ☐ - Conception d'une fonction pour se protéger d'un éventuel hacker.
-                ☐ - Se connecter à la base de donnée.
-                ☐ - Déclaration de notre requête SQL.
-                ☐ - Conception d'une boucle avec fetch().
-                ☐ - Se déconnecter de la base de donnée.
-        ☐ - Ajout du code PHP permettant de rechercher dynamiquement les informations demandés pour la colonne de gauche.
-        ☐ - Ajout du code PHP permettant de rechercher dynamiquement les informations demandés pour la colonne de droite.
+                ✔ - Importer le fichier database.php. @done (24/01/2017 à 03:14:48)
+                ✔ - Vérification si il y a bien un ID dans la super globale $_GET. @done (24/01/2017 à 03:14:47)
+                ✔ - Conception d'une fonction pour se protéger d'un éventuel hacker. @done (24/01/2017 à 03:14:44)
+                ✔ - Se connecter à la base de donnée. @done (24/01/2017 à 03:14:43)
+                ✔ - Déclaration de notre requête SQL. @done (24/01/2017 à 03:14:43)
+                ✔ - Conception d'une boucle avec fetch(). @done (24/01/2017 à 03:14:42)
+                ✔ - Se déconnecter de la base de donnée. @done (24/01/2017 à 03:14:41)
+        ✔ - Ajout du code PHP permettant de rechercher dynamiquement les informations demandés pour la colonne de gauche. @done (24/01/2017 à 03:14:40)
+        ✔ - Ajout du code PHP permettant de rechercher dynamiquement les informations demandés pour la colonne de droite. @done (24/01/2017 à 03:14:39)

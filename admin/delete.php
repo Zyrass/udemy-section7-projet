@@ -19,7 +19,6 @@
 
 
     function checkInput($data) {
-        
         $data = trim($data);
         $data = htmlspecialchars($data);
         $data = stripslashes($data);

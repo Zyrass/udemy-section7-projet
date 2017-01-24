@@ -4,69 +4,78 @@
     $nameError = $descriptionError = $priceError = $categoryError = $imageError = $name = $description = $price = $category = $image = "";
 
     if ( !empty ( $_POST ) ) {
-        $name = checkInput ( $_POST ['name'] );
-        $description = checkInput ( $_POST ['description'] );
-        $price = checkInput ( $_POST ['price'] );
-        $category = checkInput ( $_POST ['category'] );
+        $name               = checkInput ( $_POST ['name'] );
+        $description        = checkInput ( $_POST ['description'] );
+        $price              = checkInput ( $_POST ['price'] );
+        $category           = checkInput ( $_POST ['category'] );
         // Images
-        $image = checkInput ( $_FILES ['image'] ['name'] );
-        $imagePath = '../assets/images/' . basename ( $image );
-        $imageExtension = pathinfo ( $imagePath, PATHINFO_EXTENSION );
+        $image              = checkInput ( $_FILES ['image'] ['name'] );
+        $imagePath          = '../assets/images/' . basename ( $image );
+        $imageExtension     = pathinfo ( $imagePath, PATHINFO_EXTENSION );
         
-        $isSuccess      = true;
-        $isSuccessUpload = false;
+        $isSuccess          = true;
+        $isUploadSuccess    = false;
         
         // Traitement du nom
-        if(empty($name)) {
-            $nameError = "<div class='alert alert-danger' style='margin-top: 10px;'> Le nom est obligatoire. </div>";
-            $isSuccess = false;
+        if(empty($name)) 
+        {
+            $nameError      = "<div class='alert alert-danger' style='margin-top: 10px;'> Le nom est obligatoire. </div>";
+            $isSuccess      = false;
         }
+        
         // Traitement de la description
-        if(empty($description)) {
+        if(empty($description)) 
+        {
             $descriptionError = "<div class='alert alert-danger' style='margin-top: 10px;'> La description est très importante. </div>";
-            $isSuccess = false;
+            $isSuccess      = false;
         }
+        
         // Traitement du prix
-        if(empty($price)) {
-            $priceError = "<div class='alert alert-danger' style='margin-top: 10px;'> Le prix est important ! </div>";
-            $isSuccess = false;
+        if(empty($price)) 
+        {
+            $priceError     = "<div class='alert alert-danger' style='margin-top: 10px;'> Le prix est important ! </div>";
+            $isSuccess      = false;
         }
+        
         // Traitement de la category
-        if(empty($category)) {
-            $categoryError = "<div class='alert alert-danger'> Vous êtes dans l'obligation de sélectionner une catégorie </div>";
-            $isSuccess = false;
+        if(empty($category)) 
+        {
+            $categoryError  = "<div class='alert alert-danger'> Vous êtes dans l'obligation de sélectionner une catégorie </div>";
+            $isSuccess      = false;
         }
+        
         // Traitement de l'image
-        if(empty($image)) {
-            $imageError = "<div class='alert alert-danger' style='margin-top: 10px;'> Il faut une image obligatoire </div>";
-            $isSuccess = false;
+        if(empty($image)) 
+        {
+            $imageError     = "<div class='alert alert-danger' style='margin-top: 10px;'> Il faut une image obligatoire </div>";
+            $isSuccess      = false;
         } else {
-            $isSuccessUpload = true;
+            $isUploadSuccess = true;
             
             if($imageExtension != "jpg" && $imageExtension != "jpeg" && $imageExtension != "png" && $imageExtension != "gif") {
                 $imageError = "<div class='alert alert-danger' style='margin-top: 10px;'> Les fichiers autorisés sont : .jpg, .jpeg, .png, .gif </div>";
-                $isSuccessUpload = false;
+                $isUploadSuccess = false;
             }
             
             if(file_exists($imagePath)) {
                 $imageError = "<div class='alert alert-danger' style='margin-top: 10px;'> Le fichier existe déjà </div>";
-                $isSuccessUpload = false;
+                $isUploadSuccess = false;
             }
             
             if($_FILES['image']['size'] > 500000) {
                 $imageError = "<div class='alert alert-danger' style='margin-top: 10px;'> Le fichier ne doit pas dépasser les 500 kilo octets </div>";
-                $isSuccessUpload = false;
+                $isUploadSuccess = false;
             }
             
-            if($isSuccessUpload) {
+            if($isUploadSuccess) {
                 if(!move_uploaded_file($_FILES['image']['tmp_name'], $imagePath)) {
                     $imageError = "<div class='alert alert-danger' style='margin-top: 10px;'> Il y a eu une erreur lors de l'upload de l'image </div>";
-                    $isSuccessUpload = false;
+                    $isUploadSuccess = false;
                 }
             }
         }
          
-        if( $isSuccess && $isSuccessUpload ) {
+        if( $isSuccess && $isUploadSuccess ) {
             
             $bdd = Database::connect(); 
             $declare = $bdd->prepare("INSERT INTO items ( name, description, price, category, image ) VALUES ( ?, ?,  ?,  ?,  ? )");
@@ -162,7 +171,7 @@
                 <div class="col-sm-6 col-sm-offset-1 well">
                     <div class="form-group">
                         <label for="description" >Description du produit : </label>
-                        <textarea rows="6" cols="20" name="description" id="description" placeholder="La description du produit ici..." class="form-control" value="<?php echo $description;  ?>"></textarea>
+                        <input type="text" name="description" id="description" placeholder="La description du produit ici..." class="form-control" value="<?php echo $description;  ?>">
                         <div class="alert alert-info">Vous devez savoir que tout ce qui sera inscrit, sera vérifier via le serveur.</div>
                         <span class="help-inline"><?php echo $descriptionError; ?></span>
                     </div>
